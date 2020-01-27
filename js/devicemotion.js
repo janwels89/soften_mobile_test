@@ -3,9 +3,8 @@ console.log("I am Alive! - devicemotion.js");
 
 let maxi = -1;
 
-DeviceOrientationEvent.requestPermission();
-
 if (window.DeviceMotionEvent) {
+    window.DeviceMotionEvent.requestPermission()
     document.getElementById("dmeSupported").innerText = "OK - Device Motion wird unterstützt!";
     window.addEventListener('devicemotion', function (event) {
         document.getElementById("xBeschl").innerHTML = 'x ' + event.acceleration.x.toFixed(2);
