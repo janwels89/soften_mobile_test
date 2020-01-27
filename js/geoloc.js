@@ -16,7 +16,7 @@ function holePosition() {
 function showPosition(position) {
     document.getElementById("breite").innerHTML = 'Breitengrad: ' + position.coords.latitude;
     document.getElementById("laenge").innerHTML = 'Längengrad: ' + position.coords.longitude;
-    document.getElementById("laenge").innerHTML = 'Genauigkeit: ' + position.coords.accuracy;
+    document.getElementById("accuracy").innerHTML = 'Genauigkeit: ' + position.coords.accuracy;
 
 }
 function showError(error) {
